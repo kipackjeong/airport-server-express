@@ -21,7 +21,9 @@ class App {
  */
     constructor() {
         this.#app = express();
-
+        this.#app.get("/", (req, res) => {
+            res.status(200).json({message: "successfully connected to server."});
+        });
         this.#logger = pino({
             prettifier,
         }).logger;
