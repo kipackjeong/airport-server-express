@@ -21,6 +21,9 @@ class App {
  */
     constructor() {
         this.#app = express();
+        
+        this.#initializeDependencies();
+
         this.#app.get("/", (req, res) => {
             res.status(200).json({message: "successfully connected to server."});
         });
@@ -33,7 +36,6 @@ class App {
         this.port = process.env.PORT || 3001;
         this.env = process.env.NODE_ENV || "development";
 
-        this.#initializeDependencies();
 
         this.#initializeRoutes();
     }
