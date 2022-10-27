@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": "google",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "valid-jsdoc": "off",
+    "no-console": "off",
+    "quotes": ["error", "double"],
+    "indent": ["error", 4],
+    "no-unused-vars":"warn",
+    "no-trailing-spaces":"off",
+    "max-len":"off"
+  }
+}
